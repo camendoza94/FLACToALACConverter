@@ -33,7 +33,7 @@ flacFiles.forEach((file) => {
 
   ffmpeg()
     .input(inputFilePath)
-  .outputOptions('-acodec alac')
+    .outputOptions('-acodec alac')
     .outputOptions('-vcodec copy')
     .output(outputFilePath)
     .on('end', () => {
